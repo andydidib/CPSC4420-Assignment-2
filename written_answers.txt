@@ -1,2 +1,15 @@
 C) the agent learns very quickly between 5000 and 50000 episodes as the reward increases dramatically.
 Then it begin to flat out as it passes 50000 as it learns less.
+
+D) I varied alpha between 0.1 and 0.9. At alpha = 0.1, it learns pretty fast. It plateaued around -0.75. The others learned slower than alpha = 0.1. Both are plateaued the same level around -0.10. 
+
+E) I varied gamma between 0.5 and 0.99. All three different settings are output the same result. They have the same learning rate. They plateaued at the same level, about -0.75. It looks like gamma doesn't really affect on anything.
+
+F) I varied epsilon decay between 0.9999 and 0.99999. 0.9999 and 0.99995 share the same plateau. 0.99995 learns slower before hitting 75000 episodes. The 0.99999 has a big effect as it drastically decreases the performance of the agent. It almost linearized the learning and dropped the max reward to -0.125. 
+
+G)
+Best configuration: fast_decay
+baseline: 500k hands (5 seeds x 100k): mean=-0.0650 +/- 0.0013 SE | win=0.423 draw=0.089 loss=0.488 | steps/hand=1.60 | per-seed means=[-0.0681 -0.0658 -0.0681 -0.0612 -0.0618]
+    30-episode run (seed 0): mean=-0.233 +/- 0.164 SE, win=0.30
+fast_decay: 500k hands (5 seeds x 100k): mean=-0.0642 +/- 0.0013 SE | win=0.423 draw=0.089 loss=0.487 | steps/hand=1.61 | per-seed means=[-0.0576 -0.0644 -0.0598 -0.07   -0.069 ]
+    30-episode run (seed 0): mean=0.000 +/- 0.166 SE, win=0.40
