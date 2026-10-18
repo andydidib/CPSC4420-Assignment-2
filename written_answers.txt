@@ -1,0 +1,2 @@
+C) the agent learns very quickly between 5000 and 50000 episodes as the reward increases dramatically.
+Then it begin to flat out as it passes 50000 as it learns less.
