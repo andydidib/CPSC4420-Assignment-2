@@ -1,0 +1,5 @@
+Best configuration: fast_decay
+baseline: 500k hands (5 seeds x 100k): mean=-0.0650 +/- 0.0013 SE | win=0.423 draw=0.089 loss=0.488 | steps/hand=1.60 | per-seed means=[-0.0681 -0.0658 -0.0681 -0.0612 -0.0618]
+    30-episode run (seed 0): mean=-0.233 +/- 0.164 SE, win=0.30
+fast_decay: 500k hands (5 seeds x 100k): mean=-0.0642 +/- 0.0013 SE | win=0.423 draw=0.089 loss=0.487 | steps/hand=1.61 | per-seed means=[-0.0576 -0.0644 -0.0598 -0.07   -0.069 ]
+    30-episode run (seed 0): mean=0.000 +/- 0.166 SE, win=0.40
